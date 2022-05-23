@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Yolov5_ETS</string>
+    <string name="predict">Predict</string>
+</resources>
