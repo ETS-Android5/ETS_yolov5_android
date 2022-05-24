@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
         if (startYolo) {
 
-            String tinyYoloWeights = getFilesDir() + "/dnns/yolov5s.onnx";
+            String tinyYoloWeights = getFilesDir() + "/yolov5s.onnx";
 
             tinyYolo = Dnn.readNetFromONNX(tinyYoloWeights);
          }
