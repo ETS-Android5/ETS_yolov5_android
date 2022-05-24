@@ -43,11 +43,9 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
             if (!firstTimeYolo){
                 firstTimeYolo = true;
-                //String tinyYoloCfg = getFilesDir() + "/busyolo.cfg" ;
-                //String tinyYoloWeights = getFilesDir() + "/busyolo.weights";
+                
                 String tinyYoloWeights = getFilesDir() + "/yolov5s.onnx";
-
-                //tinyYolo = Dnn.readNetFromDarknet(tinyYoloCfg, tinyYoloWeights);
+               
                 tinyYolo = Dnn.readNetFromONNX(tinyYoloWeights);
             }
         }
